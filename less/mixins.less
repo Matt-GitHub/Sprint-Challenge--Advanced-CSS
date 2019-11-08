@@ -1,1 +1,17 @@
 // Mixins Here
+
+.hover {
+    background-color: white;
+    color: black;
+}
+
+.flex-auto {
+    display: flex;
+    margin: 0 auto;
+}
+
+.create(@color, @bg, @align) {
+    color: @color;
+    background-color: @bg;
+    text-align: @align;
+}
