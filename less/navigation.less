@@ -1,1 +1,44 @@
 // Navigation code here
+
+.main-nav {
+    .flex-auto();
+    flex-direction: column;
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+    width: 100%;
+    padding: 1%;
+    position: fixed;
+    z-index: 1;
+
+    .title {
+        font-size: 4rem;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        padding-top: 1.5%;
+        width: 100%;
+
+        @media @phone {
+            .flex-auto();
+            max-width: 100%;
+        }
+
+        nav {
+            width: 50%;
+            justify-content: space-around;
+            .flex-auto();
+
+            @media @phone {
+                width: 80%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            font-style: @nav-font;
+        }
+    }
+}
